@@ -58,10 +58,10 @@ namespace Sample.Dao
                                 <attribute name='telephone1' />
                                 <attribute name='numberofemployees' />
                                 <attribute name='description' />
-<attribute name='address1_line1' />
-<attribute name='address1_line2' />
-<attribute name='address1_city' />
-<attribute name='address1_postalcode' />
+                                <attribute name='address1_line1' />
+                                <attribute name='address1_line2' />
+                                <attribute name='address1_city' />
+                                <attribute name='address1_postalcode' />
                             </entity>
                           </fetch>";
                     var queryserch = crmSvc.GetEntityDataByFetchSearch(fetchXML);
