@@ -1,0 +1,20 @@
+﻿<br />
+<div class="row">
+    <div class="col-lg-6">
+        <select ng-model="selectedAttr" class="form-control" ng-change="FuncChange()">
+            <option value="name">Account Name</option>
+            <option value="telephone1">Main Phone</option>
+            <option value="numberofemployees">No. of Employees</option>
+            <option value="address1_line1">Street 1</option>
+            <option value="address1_line2">Street 2</option>
+            <option value="address1_city">City</option>
+            <option value="address1_postalcode">ZIP/Postal Code</option>
+        </select>
+    </div>
+    <div class="col-lg-6">
+        <div class="demo-section k-content">
+            <input kendo-auto-complete ng-model="value" k-data-source="filterres" style="width: 100%;" />
+        </div>
+    </div>
+</div>
+<button class="btn-success" ng-click="filter(selectedAttr, value)">Result</button>

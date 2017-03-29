@@ -1,0 +1,88 @@
+﻿<div>
+    <div ng-show="loadingreq">
+        loading...
+    </div>
+    <div ng-show="successreq">
+        success...
+    </div>
+    <form class="form-inline" name="myForm">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th><strong>Details</strong></th>
+                            <th><strong>Address</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only" for="name">Account Name</label>
+                                    <input type="text" class="form-control" id="name" required placeholder="Account Name" ng-model="default.name">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only">Street 1</label>
+                                    <input type="text" placeholder="Street 1" class="form-control" ng-model="default.address1_line1"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only" for="phone">Main Phone</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Main Phone" ng-model="default.telephone1">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only">Street 2</label>
+                                    <input type="text" placeholder="Street 2" class="form-control" ng-model="default.address1_line2"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only">No. of Employees</label>
+                                    <input type="text" class="form-control" placeholder="No. of Employees" ng-model="default.numberofemployees"/>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only">City</label>
+                                    <input type="text" placeholder="City" class="form-control" ng-model="default.address1_city"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only">Description</label>
+                                    <textarea class="form-control" placeholder="Descripton" ng-model="default.description"></textarea>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label class="sr-only">Zip/Postal Code</label>
+                                    <input type="text" class="form-control" placeholder="Zip/Postal Code" ng-model="default.address1_postalcode"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="submit" class="btn btn-success" ng-click="submit(default.name, default.address1_line1, default.telephone1, default.address1_line2, default.numberofemployees, default.address1_city, default.description, default.address1_postalcode)">Submit</button>
+                
+                
+                
+            </div>
+        </div>
+
+
+        
+    </form>
+</div>
