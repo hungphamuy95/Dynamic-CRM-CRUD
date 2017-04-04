@@ -376,7 +376,7 @@ SDK.REST = {
    { optionsString = options; }
   }
   var req = new XMLHttpRequest();
-  req.open("GET", this._ODataPath() + type + "Set" + optionsString, true);
+  req.open("GET", this._ODataPath() + type + optionsString, true);
   req.setRequestHeader("Accept", "application/json");
   req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
   req.onreadystatechange = function () {
