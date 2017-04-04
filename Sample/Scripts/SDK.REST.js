@@ -45,7 +45,7 @@ SDK.REST = {
   /// Private function to return the path to the REST endpoint.
   ///</summary>
   ///<returns>String</returns>
-  return this._getClientUrl() + "/XRMServices/2011/OrganizationData.svc/";
+  return this._getClientUrl() + "/api/data/v8.2/";
  },
  _errorHandler: function (req) {
   ///<summary>
