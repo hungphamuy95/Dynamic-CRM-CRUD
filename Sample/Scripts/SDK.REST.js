@@ -28,7 +28,8 @@ SDK.REST = {
     return Xrm.Page.context;
    }
    else
-   { throw new Error("Context is not available."); }
+   { 
+  console.log("context không tồn tại");
   }
  },
  _getClientUrl: function () {
