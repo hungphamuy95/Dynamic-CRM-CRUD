@@ -41,5 +41,9 @@ namespace Sample.Controllers
         {
             new AccountDao().Update(guid, m);
         }
+        public void Reset()
+        {
+            Console.WriteLine("hi");
+        }
     }
 }
